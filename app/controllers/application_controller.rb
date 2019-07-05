@@ -11,4 +11,5 @@ class ApplicationController < ActionController::Base
     redirect to login_path unless current_user
   end
 
-  
+
+end  
