@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
     session[:name]
   end
 
-end
+  def welcome
+    redirect to login_path unless current_user
+  end
+
+  
